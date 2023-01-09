@@ -4,6 +4,14 @@ suma de todos los números de la matriz. */
 
 const numbers = [1, 2, 3, 5, 45, 37, 58];
 
-function sumAll(param) {
-  // insert code
+function sumAll(array) {
+  let suma =0;
+for(i=0; i<array.length; i++){
+  suma = suma + array[i];
 }
+console.log(suma);
+return suma;
+}
+sumAll(numbers);
+
+
