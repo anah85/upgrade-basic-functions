@@ -1,14 +1,12 @@
 function sum(numberOne , numberTwo) {
-    let masAlto;
-    if(numberOne>=numberTwo){
-        masAlto = numberOne;
+    if(numberOne > numberTwo){
+        console.log('El más alto es '+numberOne)
+        return numberOne;
     }
     else {
-        masAlto = numberTwo;
+        console.log('El más alto es '+numberTwo)
+        return numberTwo;
     }
-    return masAlto;
 }
 
-console.log(sum(3,3));
-console.log(sum(3,5));
-console.log(sum(5,3));
+console.log(sum(9,3));
