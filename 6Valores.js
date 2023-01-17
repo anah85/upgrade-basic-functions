@@ -14,18 +14,14 @@ const duplicates = [
     'pasta',
     'soda'
   ];
-  function removeDuplicates(duplicates) {
-    for (i = 0; i < duplicates.length; i++) {
-      const duplicado = duplicates[i];
-      console.log('Está repetido  '+ duplicado);
-      let palabra = false;
-    for(j=0; j< duplicates.length; j++){
-      const repetido = duplicates[j];
-      if(duplicado==repetido && i!==j){
-      palabra = true;
-      }
-    }
-  console.log(palabra.indexof === true);
+  function removeDuplicates(array){
+  const noRepe =[];
+  for(const palabra of array){
+  if(noRepe.indexOf(palabra) === -1){
+    noRepe.push(palabra);
   }
 }
-  removeDuplicates(duplicates);
+return noRepe
+};
+
+console.log(removeDuplicates(duplicates));
